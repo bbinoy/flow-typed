@@ -47,6 +47,7 @@ declare module "bignumber.js" {
     static (value: $npm$bignumber$object, base?: number): BigNumber;
     constructor(value: $npm$bignumber$object, base?: number): BigNumber;
 
+    config(c: CONFIG): CONFIG;
     clone(c: CONFIG): BigNumber;
     isBigNumber(n: any): boolean;
     max([$npm$bignumber$object]): BigNumber;
@@ -72,6 +73,7 @@ declare module "bignumber.js" {
     times(n: $npm$bignumber$object): BigNumber;
     toExponential(dp: ?number): string;
     toFixed(dp: ?number): string;
+    toFormat(dp?: number, rm?: RM): string;
     toPrecision(sd: ?number): string;
     toString(): string;
     valueOf(): string;
